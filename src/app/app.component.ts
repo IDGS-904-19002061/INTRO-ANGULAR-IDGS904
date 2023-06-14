@@ -15,6 +15,7 @@ export class AppComponent {
   Alumnos={
     matricula:1234,
     nombre:'Angel',
-    fechaNacimiento:new Date()
+    fechaNacimiento:new Date(),
+    pagoIns:2759.23
   }
 }

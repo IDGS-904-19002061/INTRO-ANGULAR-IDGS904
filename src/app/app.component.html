@@ -1,10 +1,22 @@
-<p>Hola mundo!!!</p>
+<div class="contaner m-4">
+    <div class="row">
+        <p>Hola mundo!!!</p>
 
-<div>{{title}}</div>
+        <div>{{title}}</div>
 
-<div>La suma de 2+2 es {{2+2}}</div>
-<div>El doble de 3 es : {{dupliValor(3)}}</div>
-<h2>Alumno IDGS904</h2>
-<div>{{Alumnos.matricula}}</div>
-<div>{{Alumnos.nombre}}</div>
-<div>{{Alumnos.fechaNacimiento}}</div>
+        <div>La suma de 2+2 es {{2+2}}</div>
+        <div>El doble de 3 es : {{dupliValor(3)}}</div>
+        <h2>Alumno IDGS904</h2>
+        <div>Matricula: {{Alumnos.matricula}}</div>
+        <div>Nombre: {{Alumnos.nombre}}</div>
+        <div>Fecha de nacimiento: {{Alumnos.fechaNacimiento | date}}</div>
+        <div>Pago: {{Alumnos.pagoIns | currency}}</div>
+
+        <hr>
+    <app-escuela></app-escuela>
+    <hr><br>
+    <app-alumno></app-alumno>
+    <hr>
+    <app-iric></app-iric>
+    </div>
+</div>
