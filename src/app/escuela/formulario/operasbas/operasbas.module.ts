@@ -7,6 +7,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {NgIf} from '@angular/common';
 import { OperasbasComponent } from './operasbas.component';
 import { FormsModule } from '@angular/forms';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatIconModule,
     NgIf,
-    FormsModule
+    FormsModule,
+    MatRadioModule
   ],
   exports:[
     OperasbasComponent

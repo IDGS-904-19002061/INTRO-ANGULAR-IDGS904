@@ -6,21 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./operasbas.component.css']
 })
 export class OperasbasComponent {
-  value='Clear me'
   num1=''
   num2=''
   resultado:number=0
+  tipoOperaciones:string[] = ['Sumar', 'Restar', 'Dividir', 'Multiplicar']
+  operacionSeleccionada = 'Sumar'
 
-  sumar() {
-    this.resultado=parseInt(this.num1)+parseInt(this.num2)
-  }
-  restar() {
-    this.resultado=parseInt(this.num1)-parseInt(this.num2)
-  }
-  dividir() {
-    this.resultado=parseInt(this.num1)/parseInt(this.num2)
-  }
-  multiplicar() {
-    this.resultado=parseInt(this.num1)*parseInt(this.num2)
+  calcular() {
+    switch(this.operacionSeleccionada){
+      case 'Sumar':
+          this.resultado=parseInt(this.num1)+parseInt(this.num2)
+        break
+        case 'Restar':
+          this.resultado=parseInt(this.num1)-parseInt(this.num2)
+        break
+        case'Dividir':
+          this.resultado=parseInt(this.num1)/parseInt(this.num2)
+        break
+        case 'Multiplicar':
+          this.resultado=parseInt(this.num1)*parseInt(this.num2)
+        break
+    }
   }
 }
