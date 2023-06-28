@@ -3,5 +3,6 @@ export interface Alumno {
     nombre: string,
     correo: string
     pago: number,
+    calif: number,
     foto: string
   }
