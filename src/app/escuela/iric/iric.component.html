@@ -25,8 +25,9 @@
                             <th>Nombre</th>
                             <th>Correo</th>
                             <th>Pago</th>
-                            <th>Calificacion</th>
+                            <th>Calificacion - {{alumnoTitle}}</th>
                             <th>Foto</th>
+                            <th>Estrellas</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -42,7 +43,7 @@
                                 [style.margin.px]="imageMargin"
                                 >
                             </td>
-                            <td><app-calificacion-alum [califica]="item.calif"></app-calificacion-alum></td>
+                            <td><app-calificacion-alum (calificaClick)="onCalificaClick($event)" [califica]="item.calif"></app-calificacion-alum></td>
                         </tr>
                     </tbody>
                 </table>

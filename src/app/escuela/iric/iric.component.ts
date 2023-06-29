@@ -13,12 +13,15 @@ export class IricComponent {
   imageMargin:number=2
   muestraImagen:boolean=true
   listFilter:string=''
+  alumnoTitle!:string
 
   showImagen():void {
     this.muestraImagen = !this.muestraImagen
   }
 
-  
+  onCalificaClick(message:string){
+    this.alumnoTitle= `${message}`
+  }
 
   alumnoIric:Alumno[]=[
     {
