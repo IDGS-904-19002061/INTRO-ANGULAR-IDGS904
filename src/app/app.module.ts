@@ -14,6 +14,7 @@ import { AlumnosFilterPipe } from './escuela/alumnos-filter.pipe';
 import { CalificacionAlumComponent } from './escuela/calificacion-alum/calificacion-alum.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-reactive.component';
+import { AppRoutingModule } from './app_routing.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-re
     BrowserAnimationsModule,
     OperasbasModule,
     FontAwesomeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
